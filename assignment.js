@@ -11,6 +11,7 @@ function feetToMile(feet){
 let convertedMile = feetToMile(1000);
 console.log(convertedMile);
 
+
 // woodCalculator
 function woodCalculator(chair, table, bed){
     let chairCount = chair*1;
@@ -21,20 +22,6 @@ function woodCalculator(chair, table, bed){
 }
 let woodResult = woodCalculator(10, 5, 2);
 console.log(woodResult);
-
-// tinyFriend
-function tinyFriend(name){
-    let smallName = name[0];
-    for(let i=0; i<name.length; i++){
-        let currentName = name[i];
-        if(currentName.length < smallName.length){
-            smallName = currentName;
-        }
-    }
-    return smallName;
-}
-let smallFriend = tinyFriend(['asad', 'mokbul', 'jafar', 'opu']);
-console.log(smallFriend);
 
 
 // brickCalculator
@@ -54,3 +41,18 @@ function brickCalculator(floor){
 }
 let brickAmount = brickCalculator(17);
 console.log(brickAmount);
+
+
+// tinyFriend
+function tinyFriend(name){
+    let smallName = name[0];
+    for(let i=0; i<name.length; i++){
+        let currentName = name[i];
+        if(currentName.length < smallName.length){
+            smallName = currentName;
+        }
+    }
+    return smallName;
+}
+let smallFriend = tinyFriend(['asad', 'mokbul', 'jafar', 'opu']);
+console.log(smallFriend);
