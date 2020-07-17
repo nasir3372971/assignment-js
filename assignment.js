@@ -1,7 +1,12 @@
 // feetToMile
 function feetToMile(feet){
     let mile = feet/5280;
-    return mile;
+    if(feet<0){
+        console.log('feet cannot be negetive')
+    }
+    else{
+        return mile;
+    }
 }
 let convertedMile = feetToMile(1000);
 console.log(convertedMile);
